@@ -1,0 +1,58 @@
+body{
+    background-color: lightblue;
+}
+p{
+    background: linear-gradient(to left, pink, yellow);
+    font-size: 50px;
+    color: goldenrod;
+}
+ul,ol{
+    font-size: 24px;
+    color: purple;
+}
+ul.u1 li::marker{
+    color: blue;
+    font-size: 1.2em;
+}
+.u2 li{
+    padding-left: 8px;
+}
+ol{
+    margin-left: 100px;
+}
+@counter-style emojies {
+    system: cyclic;
+    symbols: 😀 👻 👽 👾 🤖 🎃 😹 👋 👀 💋;
+    suffix: " ";
+  }
+  
+  ul.u3 {
+    list-style: emojies;
+  }
+
+  
+@counter-style lower-ukrainian-full {
+    system: alphabetic;
+    symbols: '\430' '\431' '\432' '\433' '\491' '\434' '\435' '\454' '\436' '\437' '\438' '\456' '\457' '\439' '\43A' '\43B' '\43C' '\43D' '\43E' '\43F' '\440' '\441' '\442' '\443' '\444' '\445' '\446' '\447' '\448' '\449' '\44C' '\44E' '\44F';
+    /* symbols: 'а' 'б' 'в' 'г' 'ґ' 'д' 'е' 'є' 'ж' 'з' 'и' 'і' 'ї' 'й' 'к' 'л' 'м' 'н' 'о' 'п' 'р' 'с' 'т' 'у' 'ф' 'х' 'ц' 'ч' 'ш' 'щ' 'ь' 'ю' 'я'; */
+    suffix: ') ';
+    }
+    ul.u4 {
+        list-style: lower-ukrainian-full;
+    }
+
+
+@counter-style hangul {
+    system: alphabetic;
+    symbols: '\AC00' '\B098' '\B2E4' '\B77C' '\B9C8' '\BC14' '\C0AC' '\C544' '\C790' '\CC28' '\CE74' '\D0C0' '\D30C' '\D558';
+/* symbols: '가' '나' '다' '라' '마' '바' '사' '아' '자' '차' '카' '타' '파' '하'; */
+    }
+    ul.u5 {
+        list-style: hangul;
+    }
+
+
+     
+
+        
+    
